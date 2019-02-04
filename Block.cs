@@ -6,12 +6,13 @@ namespace Game_AI_Exercise
 {
     class Block
     {
-        public List<int> blockLocation = new List<int>();
+        public int blockx;
+        public int blocky;
 
         public Block(int passedInWidth, int passedInHeight)
         {
-            blockLocation.Add(passedInWidth);
-            blockLocation.Add(passedInHeight);
+            blockx = passedInWidth;
+            blocky = passedInHeight;
         }
     }
 }

@@ -16,10 +16,19 @@ namespace Game_AI_Exercise
         public int hValue;
         public int fValue;
 
+        public Node()
+        {
+            xPos = 0;
+            yPos = 0;
+        }
+
         string nodeVisual()
         {
             if (isBlock)
                 return "|B";
+
+            else if (isPlayer)
+                return "|X";
 
             else
                 return "|-";

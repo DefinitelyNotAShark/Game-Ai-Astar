@@ -67,7 +67,17 @@ namespace Game_AI_Exercise
             {
                 for (int x = 0; x < width; x++)
                 {
+                    Node n = new Node();
+                    n.xPos = x;
+                    n.yPos = y;
                     
+                    foreach(Block b in blocks)
+                    {
+                        if (b.blockx == x && b.blocky == y)
+                        {
+                            n.isBlock = true;
+                        }
+                    }
                 }
             }
         }
