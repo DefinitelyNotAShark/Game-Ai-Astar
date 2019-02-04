@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sophi\\source\\repos\\Game-AI-Exercise\\Game-AI-Exercise\\Game-AI-Exercise.csproj",
+      "projectUniqueName": "C:\\Users\\sophi\\source\\repos\\Game-Ai-Astar\\Game-AI-Exercise.csproj",
       "projectName": "Game-AI-Exercise",
-      "projectPath": "C:\\Users\\sophi\\source\\repos\\Game-AI-Exercise\\Game-AI-Exercise\\Game-AI-Exercise.csproj",
+      "projectPath": "C:\\Users\\sophi\\source\\repos\\Game-Ai-Astar\\Game-AI-Exercise.csproj",
       "packagesPath": "C:\\Users\\sophi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sophi\\source\\repos\\Game-AI-Exercise\\Game-AI-Exercise\\obj\\",
+      "outputPath": "C:\\Users\\sophi\\source\\repos\\Game-Ai-Astar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
