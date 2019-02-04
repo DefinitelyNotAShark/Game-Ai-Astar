@@ -16,7 +16,21 @@ namespace Game_AI_Exercise
         private void GameLoop()
         {
             Map map = new Map(10, 10, 9, 9);
-            map.SetNodes();
+            Node start = new Node();
+            start.xPos = 0;
+            start.yPos = 0;
+
+            Node current = new Node();
+            current.xPos = 2;
+            current.yPos = 3;
+
+            Node finish = new Node();
+            finish.xPos = 9;
+            finish.yPos = 9;
+
+            Console.WriteLine(map.CalculateFCost(start, finish, current));
+            //map.SetNodes();
+            
 
             while (!gameOver)
             {

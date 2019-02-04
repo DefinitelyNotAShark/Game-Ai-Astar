@@ -9,11 +9,11 @@ namespace Game_AI_Exercise
         private int width;
         private int height;
 
-        private int goalX;
-        private int goalY;
 
-        private bool goalWidth = false;
-        private bool goalHeight = false;
+        private int startPointX;
+        private int startPointY;
+        private int endPointX;
+        private int endPointY;
 
         private bool wasABlock = false;
         private List<Block> blocks = new List<Block>();
@@ -27,9 +27,15 @@ namespace Game_AI_Exercise
         {
             width = passedInWidth;
             height = passedInHeight;
-            goalX = xParamGoal;
-            goalY = yParamGoal;
+            endPointX = xParamGoal;
+            endPointY = yParamGoal;
             AddBlocks();
+
+            Node start = new Node();
+            start.xPos = startPointX;
+            start.yPos = startPointY;
+
+            open.Add(start);
 
         }
 
@@ -67,10 +73,12 @@ namespace Game_AI_Exercise
             {
                 for (int x = 0; x < width; x++)
                 {
+                    //make a node and set its position to current
                     Node n = new Node();
                     n.xPos = x;
                     n.yPos = y;
                     
+                    //check if it's a block
                     foreach(Block b in blocks)
                     {
                         if (b.blockx == x && b.blocky == y)
@@ -78,8 +86,53 @@ namespace Game_AI_Exercise
                             n.isBlock = true;
                         }
                     }
+
+                    //
+                    foreach(Node openNode in open)
+                    {
+
+                    }
+
+
                 }
             }
+        }
+
+        public string CalculateFCost(Node start, Node finish, Node current)
+        {
+            //calculate G (distance from start);
+            int g;
+            int gx = Math.Abs(current.xPos) - Math.Abs(start.xPos);//get the x difference
+            int gy = Math.Abs(current.yPos) - Math.Abs(start.yPos);//get the y difference
+
+            if (gx == 0 || gy == 0)//if the difference between one of them is 0, one of them is a straight line
+            {
+                if (gx != 0)//if the x difference is more than 0, horizontal line
+                {
+                    g = gx * 10;
+                    return g.ToString();
+                }
+                else if (gy != 0)//if the y difference is more than 0, vertical line
+                {
+                    g = gy * 10;
+                    return g.ToString();
+                }
+            }
+            else//otherwise, we have a diagonal line
+            {
+                double sum = (gx * gx) + (gy * gy);//square both of the distances
+                g = Convert.ToInt16(Math.Sqrt(sum) * 14);//
+                return g.ToString();
+            }
+
+            return "";
+
+             
+            //calculate H (distance from end);
+
+            // f = g + h;
+
+            //return f;
         }
 
         //public void DrawMap()
