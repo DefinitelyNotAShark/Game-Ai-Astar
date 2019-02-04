@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sophi\\.nuget\\packages\\": {},
+    "C:\\Users\\TEMP\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sophi\\source\\repos\\Game-Ai-Astar\\Game-AI-Exercise.csproj",
+      "projectUniqueName": "C:\\Users\\TEMP\\Desktop\\Game-Ai-Astar\\Game-AI-Exercise.csproj",
       "projectName": "Game-AI-Exercise",
-      "projectPath": "C:\\Users\\sophi\\source\\repos\\Game-Ai-Astar\\Game-AI-Exercise.csproj",
-      "packagesPath": "C:\\Users\\sophi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sophi\\source\\repos\\Game-Ai-Astar\\obj\\",
+      "projectPath": "C:\\Users\\TEMP\\Desktop\\Game-Ai-Astar\\Game-AI-Exercise.csproj",
+      "packagesPath": "C:\\Users\\TEMP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TEMP\\Desktop\\Game-Ai-Astar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\sophi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TEMP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
