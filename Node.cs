@@ -6,6 +6,8 @@ namespace Game_AI_Exercise
 {
     class Node
     {
+        Node parentNode;
+
         public bool isBlock;
         public bool isPlayer;
 
@@ -21,8 +23,22 @@ namespace Game_AI_Exercise
             xPos = 0;
             yPos = 0;
         }
-
-        string nodeVisual()
+        public Node(int _posX,int _posY, bool _isblock = false)
+        {
+            xPos = _posX;
+            yPos = _posY;
+            isBlock = _isblock;
+        }
+        /// <summary>
+        /// The parent Nodes; THe area where we will check the surround nodes for (F) costs
+        /// </summary>
+        /// <param name="_PosX"></param>
+        /// <param name="_PosY"></param>
+        private void InitParentNode(int _PosX, int _PosY)
+        {
+            parentNode = new Node(_PosX, _PosY);
+        }
+        public string nodeVisual()
         {
             if (isBlock)
                 return "|B";
