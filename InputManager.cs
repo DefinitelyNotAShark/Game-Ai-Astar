@@ -15,14 +15,14 @@ namespace Game_AI_Exercise
 
         private void GameLoop()
         {
-            Map map = new Map(10, 10);
-            map.DrawMap();
+            Map map = new Map(10, 10, 9, 9);
+            map.SetNodes();
 
             while (!gameOver)
             {
                 Console.ReadKey();
                 Console.Clear();
-                map.DrawMap();
+                map.SetNodes();
             }
         }
     }
