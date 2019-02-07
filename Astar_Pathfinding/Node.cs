@@ -16,6 +16,7 @@ namespace Astar_Pathfinding
         //[NOTES] : F = G + H
         public int Gcost;//cost value from starting node to current node
         public int Hcost;//cost value from current node to target node
+        public int Fcost;
         public bool isBlock;
 
         public Node(int _posx,int _posy, bool _isblock = false,NodeType _type = NodeType.Empty)
@@ -37,9 +38,9 @@ namespace Astar_Pathfinding
         {
             Node otherNode = obj as Node;
             //Place object before this node
-            if (this.Hcost < otherNode.Hcost) return -1;
+            if (this.Fcost < otherNode.Fcost) return -1;
             //Place object after this node
-            else if (this.Hcost > otherNode.Hcost) return 1;
+            else if (this.Fcost > otherNode.Fcost) return 1;
             //Leave it if object & this node are the same
             return 0;
         }

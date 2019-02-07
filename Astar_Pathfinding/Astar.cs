@@ -79,7 +79,8 @@ namespace Astar_Pathfinding
         private void showPathNodesTable(ArrayList _list){
             for (int i = 0; i < _list.Count; i++)
             {
-                Console.WriteLine("PosX: " + ((Node)_list[i]).xPos + "\t|\tPosY: " + ((Node)_list[i]).yPos);
+                Console.WriteLine("PosX: " + ((Node)_list[i]).xPos + "| PosY: " + ((Node)_list[i]).yPos + "| G: " + ((Node)_list[i]).Gcost + 
+                    "| H: "+ ((Node)_list[i]).Hcost + "| F: " + ((Node)_list[i]).Fcost);
             }
         }
         /// <summary>
@@ -143,7 +144,8 @@ namespace Astar_Pathfinding
 
                         //update current neighbor node properties with new cost values
                         neighborNode.Gcost = totalCost;//Gcost
-                        neighborNode.Hcost = totalCost + neighborToTargetHCost;//Fcost
+                        neighborNode.Hcost = neighborToTargetHCost;
+                        neighborNode.Fcost = totalCost + neighborToTargetHCost;//Fcost
 
                         //update the Parent Node data
                         neighborNode.parentNode = curNode;
@@ -194,9 +196,9 @@ namespace Astar_Pathfinding
         /// <returns>returns the cost between the current node and the other node</returns>
         private static int CalculateCost(Node _curnode,Node _othernode)
         {
-            int HCostX = _curnode.xPos - _othernode.xPos;
-            int HCostY = _curnode.yPos - _othernode.yPos;
-            int magnitude = (int)Math.Round(Math.Sqrt((HCostX * HCostX) + (HCostY * HCostY)));
+            int CostX = _curnode.xPos - _othernode.xPos;
+            int CostY = _curnode.yPos - _othernode.yPos;
+            int magnitude = (int)Math.Round(Math.Sqrt((CostX * CostX) + (CostY * CostY)));
             
             return magnitude;
         }

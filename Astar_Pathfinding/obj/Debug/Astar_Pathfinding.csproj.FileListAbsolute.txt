@@ -5,3 +5,10 @@ C:\Users\Spidakid\Desktop\TEST\Astar_Pathfinding\Astar_Pathfinding\obj\Debug\Ast
 C:\Users\Spidakid\Desktop\TEST\Astar_Pathfinding\Astar_Pathfinding\obj\Debug\Astar_Pathfinding.csproj.CoreCompileInputs.cache
 C:\Users\Spidakid\Desktop\TEST\Astar_Pathfinding\Astar_Pathfinding\obj\Debug\Astar_Pathfinding.exe
 C:\Users\Spidakid\Desktop\TEST\Astar_Pathfinding\Astar_Pathfinding\obj\Debug\Astar_Pathfinding.pdb
+C:\Users\Spidakid\Documents\ReposGit\Game-Ai\Astar_Pathfinding\bin\Debug\Astar_Pathfinding.exe.config
+C:\Users\Spidakid\Documents\ReposGit\Game-Ai\Astar_Pathfinding\bin\Debug\Astar_Pathfinding.exe
+C:\Users\Spidakid\Documents\ReposGit\Game-Ai\Astar_Pathfinding\bin\Debug\Astar_Pathfinding.pdb
+C:\Users\Spidakid\Documents\ReposGit\Game-Ai\Astar_Pathfinding\obj\Debug\Astar_Pathfinding.csprojAssemblyReference.cache
+C:\Users\Spidakid\Documents\ReposGit\Game-Ai\Astar_Pathfinding\obj\Debug\Astar_Pathfinding.csproj.CoreCompileInputs.cache
+C:\Users\Spidakid\Documents\ReposGit\Game-Ai\Astar_Pathfinding\obj\Debug\Astar_Pathfinding.exe
+C:\Users\Spidakid\Documents\ReposGit\Game-Ai\Astar_Pathfinding\obj\Debug\Astar_Pathfinding.pdb
