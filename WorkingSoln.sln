@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game-AI-Exercise", "Game-AI-Exercise.csproj", "{DA3C7ABD-6EC5-4151-9B08-3345B9B34A9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game-AI-Exercise", "Game-AI-Exercise.csproj", "{092C11FD-048C-49F6-9170-65060EAF0366}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA3C7ABD-6EC5-4151-9B08-3345B9B34A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA3C7ABD-6EC5-4151-9B08-3345B9B34A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA3C7ABD-6EC5-4151-9B08-3345B9B34A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA3C7ABD-6EC5-4151-9B08-3345B9B34A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092C11FD-048C-49F6-9170-65060EAF0366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092C11FD-048C-49F6-9170-65060EAF0366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092C11FD-048C-49F6-9170-65060EAF0366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092C11FD-048C-49F6-9170-65060EAF0366}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B65AE422-0D0C-4821-8AB2-8C94C243C5BE}
+		SolutionGuid = {12292956-5E4A-457A-BE33-83920A523D5C}
 	EndGlobalSection
 EndGlobal
